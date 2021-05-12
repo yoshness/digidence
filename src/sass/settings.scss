@@ -1,0 +1,29 @@
+ //antialiased,subpixel-antialiased,none
+$font-smoothing: antialiased;
+
+//auto,optimizeSpeed,optimizeLegibility,geometricPrecision
+$text-rendering: auto;
+
+$base-font-family: 'Barlow', sans-serif;
+$base-font-size: 16px;
+$base-font-color: #535353;
+$base-background-color: #fff;
+
+$site-size: 1250px + 60;
+
+// colors
+$color-primary: #E52E44; // red
+
+// easing / animation
+$duration: .25s;
+$easing: ease-in-out;
+$delay: .35s;
+
+//breakpoints
+$breakpoint-mobile: 767px;
+
+// development
+$path-assets: "/digidence/public";
+
+$path-image: "#{$path-assets}/images/";
+$path-font: "#{$path-assets}/fonts";
