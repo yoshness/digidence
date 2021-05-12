@@ -1,0 +1,50 @@
+.package {
+  padding: 15px 40px 15px 70px;
+  color: #fff;
+  background-color: #000;
+}
+.package__left {
+  width: 29%;
+
+  h3 {
+    position: relative;
+    top: -25px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: right;
+
+    span {
+      position: relative;
+      top: 12px;
+      font-size: 67px;
+    }
+  }
+}
+.package__right {
+  width: 67%;
+  padding: 30px 0 30px 18px;
+  border-left: 1px solid #fff;
+}
+.package__details {
+  justify-content: flex-start;
+  margin-bottom: 5px;
+
+  h4 {
+    padding-right: 18px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .1em;
+    color: $color-primary;
+    border-right: 1px solid #fff;
+  }
+  p {
+    padding-left: 18px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+.package__inclusions {
+  font-size: 14px;
+  color: #afafaf;
+}

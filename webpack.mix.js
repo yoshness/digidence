@@ -7,4 +7,5 @@ mix.js(`src/js/app.js`, ASSETS_FOLDER)
     .options({
 		processCssUrls: false,
     })
+    .copyDirectory('src/fonts', `${ASSETS_FOLDER}/fonts`)
     .copyDirectory('src/images', `${ASSETS_FOLDER}/images`);

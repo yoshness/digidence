@@ -1,0 +1,47 @@
+@keyframes moveIn {
+  0% {
+    color: #000; 
+    transform: translate(-50%, 0);
+  }
+  48% {
+    transform: translate(-50%, -100%);
+  }
+  49% {
+    transform: translate(-200%, -100%);
+  }
+  50% {
+    transform: translate(-200%, 100%);
+  }
+  51% {
+    color: $color-primary; 
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    color: $color-primary; 
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes moveInDark {
+  0% {
+    color: #000; 
+    transform: translate(-50%, 0);
+  }
+  48% {
+    transform: translate(-50%, -100%);
+  }
+  49% {
+    transform: translate(-200%, -100%);
+  }
+  50% {
+    transform: translate(-200%, 100%);
+  }
+  51% {
+    color: #1ad1bb; 
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    color: #1ad1bb; 
+    transform: translate(-50%, 0);
+  }
+}

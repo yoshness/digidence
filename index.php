@@ -21,9 +21,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 <body id="js-top">
-	<!-- <div class="loader-overlay" id="js-loader-overlay"></div>
+	<!-- <div class="loader-overlay" id="js-loader-overlay"></div> -->
 	<?php include 'partials/header.php'; ?>
-	<?php include 'partials/menu.php'; ?> -->
+	<!-- <?php include 'partials/menu.php'; ?> -->
 	<main>
 		<?php
 			$request = $_SERVER['REQUEST_URI'];
@@ -39,7 +39,7 @@
 		    }
 	    ?>
 	</main>
-	<!-- <?php include 'partials/footer.php'; ?> -->
+	<?php include 'partials/footer.php'; ?>
 	<script type="text/javascript" src="/digidence/public/app.js"></script>
 </body>
 </html>

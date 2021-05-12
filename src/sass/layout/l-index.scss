@@ -1,0 +1,232 @@
+.l-index__services {
+  position: relative;
+
+  .l-container {
+    z-index: 2;
+
+    &.is-active {
+      .service__image {
+        &:after {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  &:before,
+  &:after {
+    display: block;
+    width: 440px;
+    height: 285px;
+    position: absolute;
+    content: '';
+    background-image: url(#{$path-image}/dots.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:before {
+    top: -150px;
+    right: 0;
+  }
+  &:after {
+    z-index: 1;
+    bottom: -150px;
+    left: 0;
+  }
+}
+
+.l-index__services-list {
+  position: relative;
+  margin: 120px 0 100px;
+
+   > li {
+    width: 31.5%;
+
+    &:first-child {
+      .service__image::after {
+        width: 111px;
+        height: 98px;
+        right: -6px;
+        bottom: -6px;
+        background-image: url(#{$path-image}/service-1.png);
+        transition-delay: .2s;
+      }
+    }
+    &:nth-child(2) {
+      margin-top: -60px;
+
+      .service__image::after {
+        width: 102px;
+        height: 92px;
+        right: -6px;
+        bottom: -6px;
+        background-image: url(#{$path-image}/service-2.png);
+        transition-delay: .4s;
+      }
+    }
+    &:last-child {
+      .service__image::after {
+        width: 110px;
+        height: 95px;
+        right: 2px;
+        bottom: -15px;
+        background-image: url(#{$path-image}/service-3.png);
+        transition-delay: .6s;
+      }
+    }
+  }
+}
+
+.l-index__services-overlay {
+  width: 100%;
+  height: 1065px;
+  position: absolute;
+  bottom: -750px;
+  left: 0;
+  background-color: #f7f7f7;
+}
+
+.l-index__packages {
+  position: relative;
+
+  ul {
+    width: 710px;
+    margin: 60px auto 0;
+
+     > li {
+      margin-bottom: 20px;
+
+      &:nth-child(2) {
+        .package {
+          background-color: $color-primary;
+
+          .package__details {
+            h4 {
+              color: #000;
+            }
+          }
+          .package__inclusions {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.l-index__works {
+  margin: 170px 0 110px;
+
+  ul {
+    margin-top: 85px;
+
+    li {
+      img {
+        width: 390px;
+      }
+    }
+  }
+
+  .slick-list {
+    padding: 0 6% 0 4%;
+  }
+}
+
+.l-index__reasons {
+  position: relative;
+  padding: 70px 0 230px;
+  background-color: #000;
+
+  &:after {
+    width: 25%;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background-color: #000;
+  }
+
+  .l-container {
+    &.is-active {
+      .reason__image {
+        &:after {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  .section-title {
+    color: #c6c6c6;
+  }
+
+  ul {
+    margin-top: 70px;
+
+     > li {
+      width: 23.5%;
+
+      &:first-child {
+        .reason__image::after {
+          width: 143px;
+          height: 168px;
+          right: -2px;
+          bottom: -4px;
+          background-image: url(#{$path-image}/reason-1.png);
+          transition-delay: .2s;
+        }
+      }
+      &:nth-child(2) {
+        .reason__image::after {
+          width: 128px;
+          height: 167px;
+          right: 24px;
+          bottom: -10px;
+          background-image: url(#{$path-image}/reason-2.png);
+          transition-delay: .4s;
+        }
+      }
+      &:last-child {
+        .reason__image::after {
+          width: 202px;
+          height: 159px;
+          right: -45px;
+          bottom: -10px;
+          background-image: url(#{$path-image}/reason-3.png);
+          transition-delay: .6s;
+        }
+      }
+    }
+  }
+}
+
+.l-index__contact {
+  width: 633px;
+  margin: -120px auto 0;
+}
+
+.l-index__contact-decor {
+  position: absolute;
+
+  &.l-index__contact-decor--left {
+    bottom: -42vw;
+    left: -41vw;
+
+    svg {
+      width: 46.6vw;
+      height: 39.4vw;
+    }
+  }
+  &.l-index__contact-decor--right {
+    top: -10vw;
+    right: -54vw;
+    transform: rotate(90deg);
+
+    svg {
+      width: 38.9vw;
+      height: 46.6vw;
+    }
+  }
+}
