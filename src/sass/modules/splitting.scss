@@ -1,0 +1,44 @@
+.splitting {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  flex: 2 0 0;
+}
+.splitting .cell {
+  /*  Out transition  */
+  transition: transform .15s ease;
+}
+
+.splitting .cell:nth-child(odd) {
+  transform: translateY(-100%);
+}
+
+.splitting .cell:nth-child(even) {
+  transform: translateY(100%);
+}
+
+.splitting.is-visible .cell {
+  /*  In transition  */
+  transition: transform .4s ease;
+  transform: translateY(0);
+}
+
+.splitting .cell:nth-child(1),
+.splitting .cell:nth-child(10) {
+  transition-delay: .1s;
+}
+
+.splitting .cell:nth-child(2),
+.splitting .cell:nth-child(9) {
+  transition-delay: .15s;
+}
+
+.splitting .cell:nth-child(3),
+.splitting .cell:nth-child(8) {
+  transition-delay: .2s;
+}
+
+.splitting .cell:nth-child(4),
+.splitting .cell:nth-child(7) {
+  transition-delay: .25s;
+}

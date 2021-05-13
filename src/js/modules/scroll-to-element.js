@@ -6,10 +6,15 @@ export default function scrollToElement() {
         e.preventDefault();
         
         let $target = $($(e.currentTarget).attr('href').replace('/', '')),
-            offset = -150;
+            offset = $(window).width() > 767 ? -150 : -90;
 
         if($(e.currentTarget).data('offset') != undefined) {
             offset = $(e.currentTarget).data('offset');
+        }
+
+        // if menu item is clicked, close menu first
+        if($(e.currentTarget).closest('li').hasClass('menu__item')) {
+            $('#js-toggle-menu').click();
         }
 
         if($target != '') {

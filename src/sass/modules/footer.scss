@@ -1,6 +1,10 @@
 .footer {
   padding: 170px 0;
 
+  @include max-screen($breakpoint-mobile) {
+    padding: 50px 0;
+  }
+
   .l-container {
     display: flex;
     flex-wrap: wrap;
@@ -8,11 +12,25 @@
     align-items: center;
   }
 
+  img {
+    @include max-screen($breakpoint-mobile) {
+      margin: 0 auto 45px;
+    }
+  }
+
   small {
     width: 20%;
     margin-left: 40px;
     font-weight: 500;
     letter-spacing: .05em;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+
+      order: 2;
+    }
   }
 }
 
@@ -20,6 +38,13 @@
   justify-content: flex-end;
   width: 61%;
   position: relative;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 75%;
+    margin: 0 auto 15px;
+
+    order: 1;
+  }
 
   &:before {
     width: 491px;
@@ -29,11 +54,20 @@
     right: 0;
     content: '';
     background-color: #a8a8a8;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 100%;
+    }
   }
 
   li {
     width: 15%;
     text-align: right;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 33.33%;
+      text-align: center;
+    }
 
     a {
       font-size: 12px;

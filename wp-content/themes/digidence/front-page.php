@@ -20,23 +20,23 @@ get_header();
 <main class="l-index">
 	<div class="hero u-flex u-flex--center">
 		<div class="hero__left">
-			<img src="<?php echo IMAGE_URL; ?>hero-1.png" alt="">
-			<img src="<?php echo IMAGE_URL; ?>hero-2.png" alt="">
-			<img src="<?php echo IMAGE_URL; ?>hero-3.png" alt="">
+			<div class="hero__eyecatch" id="js-hero-image-1" style="background-image: url(<?php echo IMAGE_URL; ?>hero-1.png);" data-splitting="cells" data-columns="10"></div>
+			<img src="<?php echo IMAGE_URL; ?>hero-2.png" alt="" id="js-hero-image-2">
+			<img src="<?php echo IMAGE_URL; ?>hero-3.png" alt="" id="js-hero-image-3">
 		</div>
-		<div class="hero__right">
+		<div class="hero__right" id="js-hero-right">
 			<h2>All-in-one Digital Marketing Service</h2>
 			<p>First impression indeed counts.</p>
-			<p>Your potential leads will enjoy a seamless experience navigating through your<br>customer-centric site leaving them with a lasting impression.<br>Yes, we work on making your first impression last.</p>
+			<p>Your potential leads will enjoy a seamless experience navigating through your<br class="u-show-pc">customer-centric site leaving them with a lasting impression.<br class="u-show-pc">Yes, we work on making your first impression last.</p>
 			<a href="#js-contact" class="button js-scroll" data-text="CONTACT US">
 				<span>GET QUOTE</span>
 			</a>
 		</div>
 		<div class="hero__decor hero__decor--left">
-			<?php include 'public/images/d-overlay.svg'; ?>
+			<?php echo file_get_contents( get_stylesheet_directory_uri() . '/assets/images/d-overlay.svg' ); ?>
 		</div>
 		<div class="hero__decor hero__decor--right">
-			<?php include 'public/images/d-overlay.svg'; ?>
+			<?php echo file_get_contents( get_stylesheet_directory_uri() . '/assets/images/d-overlay.svg' ); ?>
 		</div>
 	</div>
 	<section class="l-index__services" id="js-services">
@@ -213,11 +213,10 @@ get_header();
 			</a>
 		</div>
 		<div class="l-index__contact-decor l-index__contact-decor--left">
-			<?php include 'public/images/d-overlay.svg'; ?>
+			<?php echo file_get_contents( get_stylesheet_directory_uri() . '/assets/images/d-overlay.svg' ); ?>
 		</div>
 		<div class="l-index__contact-decor l-index__contact-decor--right">
-			<?php include 'public/images/d-overlay.svg'; ?>
-		</div>
+			<?php echo file_get_contents( get_stylesheet_directory_uri() . '/assets/images/d-overlay.svg' ); ?>
 	</aside>
 </main>
 

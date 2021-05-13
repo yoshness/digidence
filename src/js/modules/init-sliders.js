@@ -6,6 +6,14 @@ export default function initSliders() {
   		slidesToShow: 3,
 		cssEase: 'ease-out',
 		prevArrow: $('#js-works-slider .js-slider-prev'),
-		nextArrow: $('#js-works-slider .js-slider-next')
+		nextArrow: $('#js-works-slider .js-slider-next'),
+		responsive: [
+	      {
+	        breakpoint: 768,
+	        settings: {
+		        slidesToShow: 1,
+	        }
+	      }
+	    ]  
 	});
 }

@@ -23,15 +23,29 @@
     background-image: url(#{$path-image}/dots.svg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 40vw;
+      height: 110px;
+    }
   }
   &:before {
     top: -150px;
     right: 0;
+
+    @include max-screen($breakpoint-mobile) {
+      top: -60px;
+    }
   }
   &:after {
     z-index: 1;
     bottom: -150px;
     left: 0;
+
+    @include max-screen($breakpoint-mobile) {
+      z-index: 0;
+      bottom: -100px;
+    }
   }
 }
 
@@ -39,8 +53,17 @@
   position: relative;
   margin: 120px 0 100px;
 
+  @include max-screen($breakpoint-mobile) {
+    margin: 30px 0 50px;
+  }
+
    > li {
     width: 31.5%;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 100%;
+      margin-bottom: 25px;
+    }
 
     &:first-child {
       .service__image::after {
@@ -54,6 +77,10 @@
     }
     &:nth-child(2) {
       margin-top: -60px;
+
+      @include max-screen($breakpoint-mobile) {
+        margin-top: 0;
+      }
 
       .service__image::after {
         width: 102px;
@@ -84,6 +111,10 @@
   bottom: -750px;
   left: 0;
   background-color: #f7f7f7;
+
+  @include max-screen($breakpoint-mobile) {
+    bottom: -785px;
+  }
 }
 
 .l-index__packages {
@@ -92,6 +123,11 @@
   ul {
     width: 710px;
     margin: 60px auto 0;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 100%;
+      margin-top: 30px;
+    }
 
      > li {
       margin-bottom: 20px;
@@ -117,18 +153,35 @@
 .l-index__works {
   margin: 170px 0 110px;
 
+  @include max-screen($breakpoint-mobile) {
+    margin: 90px 0 70px;
+    padding: 0 30px;
+  }
+
   ul {
     margin-top: 85px;
+
+    @include max-screen($breakpoint-mobile) {
+      margin-top: 40px;
+    }
 
     li {
       img {
         width: 390px;
+
+        @include max-screen($breakpoint-mobile) {
+          width: 100%;
+        }
       }
     }
   }
 
   .slick-list {
     padding: 0 6% 0 4%;
+
+    @include max-screen($breakpoint-mobile) {
+      padding: 0;
+    }
   }
 }
 
@@ -136,6 +189,10 @@
   position: relative;
   padding: 70px 0 230px;
   background-color: #000;
+
+  @include max-screen($breakpoint-mobile) {
+    padding: 70px 0 30px;
+  }
 
   &:after {
     width: 25%;
@@ -146,6 +203,10 @@
     bottom: 0;
     content: '';
     background-color: #000;
+
+    @include max-screen($breakpoint-mobile) {
+      display: none;
+    }
   }
 
   .l-container {
@@ -153,6 +214,10 @@
       .reason__image {
         &:after {
           transform: scale(1);
+
+          @include max-screen($breakpoint-mobile) {
+            transform: scale(.65);
+          }
         }
       }
     }
@@ -165,8 +230,17 @@
   ul {
     margin-top: 70px;
 
+    @include max-screen($breakpoint-mobile) {
+      margin-top: 40px;
+    }
+
      > li {
       width: 23.5%;
+
+      @include max-screen($breakpoint-mobile) {
+        width: 100%;
+        margin-bottom: 40px;
+      }
 
       &:first-child {
         .reason__image::after {
@@ -176,6 +250,10 @@
           bottom: -4px;
           background-image: url(#{$path-image}/reason-1.png);
           transition-delay: .2s;
+
+          @include max-screen($breakpoint-mobile) {
+            right: 0;
+          }
         }
       }
       &:nth-child(2) {
@@ -186,6 +264,10 @@
           bottom: -10px;
           background-image: url(#{$path-image}/reason-2.png);
           transition-delay: .4s;
+
+          @include max-screen($breakpoint-mobile) {
+            right: 17px;
+          }
         }
       }
       &:last-child {
@@ -196,6 +278,11 @@
           bottom: -10px;
           background-image: url(#{$path-image}/reason-3.png);
           transition-delay: .6s;
+
+          @include max-screen($breakpoint-mobile) {
+            right: -27px;
+            bottom: -7px;
+          }
         }
       }
     }
@@ -205,6 +292,11 @@
 .l-index__contact {
   width: 633px;
   margin: -120px auto 0;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .l-index__contact-decor {
@@ -213,6 +305,11 @@
   &.l-index__contact-decor--left {
     bottom: -42vw;
     left: -41vw;
+
+    @include max-screen($breakpoint-mobile) {
+      bottom: -56vw;
+      left: -8vw;
+    }
 
     svg {
       width: 46.6vw;
@@ -223,6 +320,10 @@
     top: -10vw;
     right: -54vw;
     transform: rotate(90deg);
+
+    @include max-screen($breakpoint-mobile) {
+      display: none;
+    }
 
     svg {
       width: 38.9vw;

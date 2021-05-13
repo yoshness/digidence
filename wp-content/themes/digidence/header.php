@@ -29,7 +29,7 @@
 
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 		
 		<?php wp_head(); ?>
@@ -37,4 +37,4 @@
 
 	<body <?php body_class(); ?>>
 		<?php get_template_part( 'template-parts/header'); ?>
-		<!-- <?php get_template_part( 'template-parts/menu'); ?> -->
+		<?php get_template_part( 'template-parts/menu'); ?>

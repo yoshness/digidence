@@ -1,8 +1,8 @@
-<footer class="header" id="js-header">
+<header class="header" id="js-header">
 	<div class="l-container">
 		<a href="https://digidence.net">
-			<img src="/digidence/public/images/letter-d.svg" alt="">
-			<img src="/digidence/public/images/logo.svg" alt="">
+			<img src="<?php echo IMAGE_URL; ?>letter-d.svg" alt="">
+			<img src="<?php echo IMAGE_URL; ?>logo.svg" alt="">
 		</a>
 		<ul class="header__links u-flex">
 			<li>
@@ -16,4 +16,5 @@
 			</li>
 		</ul>
 	</div>
-</footer>
+	<span class="header__hamburger" id="js-toggle-menu"></span>
+</header>

@@ -6,12 +6,22 @@
   background-color: #fff;
   box-shadow: -7px 5px 13px 1px rgba(13, 8, 20, .1);
 
+  @include max-screen($breakpoint-mobile) {
+    height: auto;
+    padding: 25px;
+  }
+
   h3 {
     position: relative;
     margin-bottom: 70px;
     font-size: 27px;
     font-weight: 500;
     color: #000;
+
+    @include max-screen($breakpoint-mobile) {
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
 
     &:after {
       display: block;
@@ -23,6 +33,10 @@
       content: '';
       background-color: $color-primary;
       transform: translate(-50%, 20px);
+
+      @include max-screen($breakpoint-mobile) {
+        transform: translate(-50%, 10px);
+      }
     }
   }
   ul {
