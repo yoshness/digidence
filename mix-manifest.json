@@ -1,4 +1,6 @@
 {
   "/public/app.js": "/public/app.js",
-  "/public/style.css": "/public/style.css"
+  "/public/style.css": "/public/style.css",
+  "/wp-content/themes/digidence/assets/app.js": "/wp-content/themes/digidence/assets/app.js",
+  "/wp-content/themes/digidence/assets/style.css": "/wp-content/themes/digidence/assets/style.css"
 }
