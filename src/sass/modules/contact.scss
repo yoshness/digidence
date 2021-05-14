@@ -1,5 +1,5 @@
 .contact {
-  padding: 75px 95px;
+  padding: 75px 80px;
   text-align: center;
   background-color: #fff;
   box-shadow: -7px 5px 13px 1px rgba(13, 8, 20, .1);
@@ -47,20 +47,28 @@
     }
   }
   input[type='submit'] {
+    display: block;
     width: 100%;
-    margin: 55px 0;
+    margin: 55px 0 0;
     padding: 17px 0;
+    font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
     text-align: center;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+    background-color: $color-primary;
 
     @include max-screen($breakpoint-mobile) {
-      margin: 15px 0 40px;
+      margin: 40px 0;
     }
   }
 }
 .contact__sns {
   width: 95px;
-  margin: 0 auto 30px;
+  margin: 20px auto 30px;
 
   .icon {
     color: #000;

@@ -140,11 +140,36 @@ get_header();
 	<section class="l-index__works js-scroll-activate">
 		<h2 class="section-title">LATEST WORKS</h2>
 		<ul id="js-works-slider">
-			<?php for($i = 1;$i <= 5;$i++) { ?>
 			<li>
-				<img src="<?php echo IMAGE_URL; ?>works-dummy.png" alt="">
+				<a href="https://a-ble.co.jp/" target="_blank">
+					<img src="<?php echo IMAGE_URL; ?>works-1.png" alt="">
+				</a>
 			</li>
-			<?php } ?>
+			<li>
+				<a href="https://edulead.jp/" target="_blank">
+					<img src="<?php echo IMAGE_URL; ?>works-2.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="https://travel-doctor.jp/tabikana-project/" target="_blank">
+					<img src="<?php echo IMAGE_URL; ?>works-3.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="https://oc-house.com/" target="_blank">
+					<img src="<?php echo IMAGE_URL; ?>works-4.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="https://vom.world/" target="_blank">
+					<img src="<?php echo IMAGE_URL; ?>works-5.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="https://chat-mado.com/" target="_blank">
+					<img src="<?php echo IMAGE_URL; ?>works-6.png" alt="">
+				</a>
+			</li>
 		</ul>
 	</section>
 	<section class="l-index__reasons">
@@ -185,12 +210,7 @@ get_header();
 		<div class="contact">
 			<h2 class="contact__title">Get in touch</h2>
 			<p class="contact__tagline">Get A Quote From Us!</p>
-			<form action="#" class="contact__form">
-				<input type="text" placeholder="Name">
-				<input type="email" placeholder="Email Address">
-				<textarea name="" rows="3" placeholder="Message"></textarea>
-				<input type="submit" class="button" value="GET QUOTE">
-			</form>
+			<?php echo do_shortcode('[contact-form-7 id="6" title="Contact Form"]'); ?>
 			<ul class="contact__sns u-flex">
 				<li>
 					<a href="https://www.facebook.com/digidence.inc" target="_blank">

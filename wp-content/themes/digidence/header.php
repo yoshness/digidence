@@ -25,7 +25,7 @@
 		<meta property="og:url" content="" />
 		<meta property="og:site_name" content="Digidence Inc." />
 		<meta property="og:image" content="<?php echo IMAGE_URL; ?>ogp.jpg">
-		<link rel="shortcut icon" type="image/png" href="<?php echo IMAGE_URL; ?>favicon.png"/>
+		<link rel="shortcut icon" type="image/png" href="<?php echo IMAGE_URL; ?>favicon.svg"/>
 
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
