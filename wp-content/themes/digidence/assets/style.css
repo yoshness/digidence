@@ -791,6 +791,7 @@ ul {
 
 .hero__right p {
   margin-bottom: 30px;
+  padding-right: 8vw;
   font-size: 18px;
   font-weight: 300;
 }
@@ -798,6 +799,7 @@ ul {
 @media screen and (max-width: 767px) {
   .hero__right p {
     margin-bottom: 20px;
+    padding-right: 0;
     font-size: 16px;
   }
 }
@@ -809,7 +811,7 @@ ul {
 }
 
 .hero__right .button {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .hero__decor {
@@ -1513,17 +1515,24 @@ ul {
 
 .l-index__about p {
   width: 780px;
-  margin: 30px auto 85px;
+  margin: 30px auto 0;
   font-size: 18px;
   font-weight: 300;
   text-align: center;
 }
 
+.l-index__about p:last-child {
+  margin-bottom: 85px;
+}
+
 @media screen and (max-width: 767px) {
   .l-index__about p {
     width: 100%;
-    margin: 30px auto 70px;
+    margin: 30px auto 0;
     font-size: 16px;
+  }
+  .l-index__about p:last-child {
+    margin-bottom: 70px;
   }
 }
 

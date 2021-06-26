@@ -1,15 +1,23 @@
 .l-index__about {
   p {
     width: 780px;
-    margin: 30px auto 85px;
+    margin: 30px auto 0;
     font-size: 18px;
     font-weight: 300;
     text-align: center;
 
+    &:last-child {
+      margin-bottom: 85px;
+    }
+
     @include max-screen($breakpoint-mobile) {
       width: 100%;
-      margin: 30px auto 70px;
+      margin: 30px auto 0;
       font-size: 16px;
+
+      &:last-child {
+        margin-bottom: 70px;
+      }
     }
 
     span {

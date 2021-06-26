@@ -42,7 +42,8 @@ get_header();
 	<section class="l-index__about" id="js-about">
 		<div class="l-container js-scroll-activate">
 			<h2 class="section-title">ABOUT</h2>
-			<p><span>Digidence Inc.</span> is an end-to-end digital marketing agency that offers <span>strategic consultancy and development</span> for startups to growing businesses.  Whether you need a user-friendly <span>website design</span>, or you want to increase your <span>brand awareness</span> in search engines and social media, we’re here to work on making your first impression last.</p>
+			<p><span>Digidence Inc.</span> is an end-to-end digital marketing agency that offers <span>strategic consultancy and development</span> for startups to growing businesses.</p>
+			<p>Whether you need a user-friendly <span>website design</span>, or you want to increase your <span>brand awareness</span> in search engines and social media, we’re here to work on making your first impression last.</p>
 		</div>
 	</section>
 	<section class="l-index__services" id="js-services">
