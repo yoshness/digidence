@@ -1,3 +1,25 @@
+.l-index__about {
+  p {
+    width: 780px;
+    margin: 30px auto 85px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 100%;
+      margin: 30px auto 70px;
+      font-size: 16px;
+    }
+
+    span {
+      font-weight: 400;
+      color: $color-primary;
+    }
+  }
+}
+
+
 .l-index__services {
   position: relative;
 
@@ -10,41 +32,6 @@
           transform: scale(1);
         }
       }
-    }
-  }
-
-  &:before,
-  &:after {
-    display: block;
-    width: 440px;
-    height: 285px;
-    position: absolute;
-    content: '';
-    background-image: url(#{$path-image}/dots.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @include max-screen($breakpoint-mobile) {
-      width: 40vw;
-      height: 110px;
-    }
-  }
-  &:before {
-    top: -150px;
-    right: 0;
-
-    @include max-screen($breakpoint-mobile) {
-      top: -60px;
-    }
-  }
-  &:after {
-    z-index: 1;
-    bottom: -150px;
-    left: 0;
-
-    @include max-screen($breakpoint-mobile) {
-      z-index: 0;
-      bottom: -100px;
     }
   }
 }
@@ -117,6 +104,40 @@
   }
 }
 
+.l-index__services-decor {
+  display: block;
+  width: 445px;
+  height: 285px;
+  position: absolute;
+  background-image: url(#{$path-image}/dots.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 40vw;
+    height: 110px;
+  }
+
+  &.l-index__services-decor--left {
+    z-index: 1;
+    bottom: -150px;
+    left: 0;
+
+    @include max-screen($breakpoint-mobile) {
+      z-index: 0;
+      bottom: -100px;
+    }
+  }
+  &.l-index__services-decor--right {
+    top: -100px;
+    right: 0;
+
+    @include max-screen($breakpoint-mobile) {
+      top: -60px;
+    }
+  }
+}
+
 .l-index__packages {
   position: relative;
 
@@ -151,10 +172,10 @@
 }
 
 .l-index__works {
-  margin: 170px 0 110px;
+  margin: 170px 0 70px;
 
   @include max-screen($breakpoint-mobile) {
-    margin: 90px 0 70px;
+    margin: 90px 0 40px;
     padding: 0 30px;
   }
 
@@ -171,6 +192,38 @@
 
         @include max-screen($breakpoint-mobile) {
           width: 100%;
+        }
+      }
+    }
+
+    .slick-dots {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 190px;
+      margin: 50px auto 0;
+      list-style-type: none;
+
+      @include max-screen($breakpoint-mobile) {
+        margin-top: 30px;
+      }
+
+      li {
+        width: 13px;
+        height: 13px;
+        margin-bottom: 0;
+        cursor: pointer;
+        border: 1px solid #000;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all .25s ease-in-out;
+
+        &.slick-active {
+          width: 15px;
+          height: 15px;
+          border: none;
+          background-color: $color-primary;
         }
       }
     }
@@ -196,7 +249,7 @@
 
   &:after {
     width: 25%;
-    height: 150px;
+    height: 215px;
     position: absolute;
     z-index: 1;
     right: 0;
@@ -235,7 +288,7 @@
     }
 
      > li {
-      width: 23.5%;
+      width: 27.2%;
 
       @include max-screen($breakpoint-mobile) {
         width: 100%;
@@ -291,6 +344,7 @@
 
 .l-index__contact {
   width: 633px;
+  position: relative;
   margin: -120px auto 0;
 
   @include max-screen($breakpoint-mobile) {
@@ -303,7 +357,9 @@
   position: absolute;
 
   &.l-index__contact-decor--left {
-    bottom: -42vw;
+    width: 46.6vw;
+    height: 39.4vw;
+    bottom: -30vw;
     left: -41vw;
 
     @include max-screen($breakpoint-mobile) {
@@ -312,22 +368,24 @@
     }
 
     svg {
-      width: 46.6vw;
-      height: 39.4vw;
+      width: 100%;
+      height: 100%;
     }
   }
   &.l-index__contact-decor--right {
-    top: -10vw;
+    width: 38.9vw;
+    height: 46.6vw;
+    top: 0;
     right: -54vw;
-    transform: rotate(90deg);
 
     @include max-screen($breakpoint-mobile) {
       display: none;
     }
 
     svg {
-      width: 38.9vw;
-      height: 46.6vw;
+      width: 100%;
+      height: 100%;
+      transform: rotate(90deg);
     }
   }
 }

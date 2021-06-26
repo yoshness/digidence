@@ -6,6 +6,9 @@
 		</a>
 		<ul class="header__links u-flex">
 			<li>
+				<a href="#js-about" class="js-scroll">ABOUT</a>
+			</li>
+			<li>
 				<a href="#js-services" class="js-scroll">SERVICES</a>
 			</li>
 			<li>

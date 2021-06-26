@@ -24,7 +24,7 @@
 		<meta property="og:title" content="Digidence Inc.">
 		<meta property="og:url" content="" />
 		<meta property="og:site_name" content="Digidence Inc." />
-		<meta property="og:image" content="<?php echo IMAGE_URL; ?>ogp.jpg">
+		<meta property="og:image" content="<?php echo IMAGE_URL; ?>ogp.png">
 		<link rel="shortcut icon" type="image/png" href="<?php echo IMAGE_URL; ?>favicon.svg"/>
 
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,5 +36,6 @@
 	</head>
 
 	<body <?php body_class(); ?>>
+		<div class="load-overlay" id="js-load-overlay"></div>
 		<?php get_template_part( 'template-parts/header'); ?>
 		<?php get_template_part( 'template-parts/menu'); ?>

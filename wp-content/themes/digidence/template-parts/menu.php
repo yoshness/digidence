@@ -5,6 +5,9 @@
 	<nav class="menu__nav">
 		<ul class="menu__list">
 			<li class="menu__item">
+				<a class="menu__link js-scroll" href="#js-about">ABOUT</a>
+			</li>
+			<li class="menu__item">
 				<a class="menu__link js-scroll" href="#js-services">SERVICES</a>
 			</li>
 			<li class="menu__item">

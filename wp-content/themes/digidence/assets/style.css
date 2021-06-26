@@ -537,7 +537,7 @@ ul {
 }
 
 .header__links:before {
-  width: 461px;
+  width: 590px;
   height: 1px;
   position: absolute;
   right: 0;
@@ -603,6 +603,22 @@ ul {
 
 .header__hamburger:before {
   margin-bottom: 0;
+}
+
+.load-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  opacity: 1;
+  background-color: #fff;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.load-overlay.is-hidden {
+  pointer-events: none;
+  opacity: 0;
 }
 
 .menu {
@@ -690,6 +706,7 @@ ul {
 
 .hero__left img {
   position: absolute;
+  z-index: 1;
 }
 
 .hero__left img:first-of-type {
@@ -725,7 +742,7 @@ ul {
   width: 25vw;
   height: 20.8vw;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 100px;
   left: 12vw;
   background-repeat: no-repeat;
@@ -791,25 +808,35 @@ ul {
   }
 }
 
+.hero__right .button {
+  margin-top: 30px;
+}
+
 .hero__decor {
   position: absolute;
 }
 
+.hero__decor svg {
+  width: 100%;
+  height: 100%;
+}
+
 .hero__decor.hero__decor--left {
-  top: -22px;
+  width: 29.7vw;
+  height: 35.5vw;
+  top: 60px;
   left: -9vw;
-  transform: rotate(90deg);
 }
 
 .hero__decor.hero__decor--left svg {
-  width: 29.7vw;
-  height: 35.5vw;
+  transform: rotate(90deg);
 }
 
 .hero__decor.hero__decor--right {
+  width: 39vw;
+  height: 46.5vw;
   top: -280px;
   right: -29vw;
-  transform: rotate(-90deg);
 }
 
 @media screen and (max-width: 767px) {
@@ -820,8 +847,7 @@ ul {
 }
 
 .hero__decor.hero__decor--right svg {
-  width: 39vw;
-  height: 46.5vw;
+  transform: rotate(-90deg);
 }
 
 .section-title {
@@ -1485,6 +1511,27 @@ ul {
   }
 }
 
+.l-index__about p {
+  width: 780px;
+  margin: 30px auto 85px;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .l-index__about p {
+    width: 100%;
+    margin: 30px auto 70px;
+    font-size: 16px;
+  }
+}
+
+.l-index__about p span {
+  font-weight: 400;
+  color: #E52E44;
+}
+
 .l-index__services {
   position: relative;
 }
@@ -1495,48 +1542,6 @@ ul {
 
 .l-index__services .l-container.is-active .service__image:after {
   transform: scale(1);
-}
-
-.l-index__services:before, .l-index__services:after {
-  display: block;
-  width: 440px;
-  height: 285px;
-  position: absolute;
-  content: '';
-  background-image: url(/digidence/wp-content/themes/digidence/assets/images//dots.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (max-width: 767px) {
-  .l-index__services:before, .l-index__services:after {
-    width: 40vw;
-    height: 110px;
-  }
-}
-
-.l-index__services:before {
-  top: -150px;
-  right: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .l-index__services:before {
-    top: -60px;
-  }
-}
-
-.l-index__services:after {
-  z-index: 1;
-  bottom: -150px;
-  left: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .l-index__services:after {
-    z-index: 0;
-    bottom: -100px;
-  }
 }
 
 .l-index__services-list {
@@ -1613,6 +1618,47 @@ ul {
   }
 }
 
+.l-index__services-decor {
+  display: block;
+  width: 445px;
+  height: 285px;
+  position: absolute;
+  background-image: url(/digidence/wp-content/themes/digidence/assets/images//dots.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .l-index__services-decor {
+    width: 40vw;
+    height: 110px;
+  }
+}
+
+.l-index__services-decor.l-index__services-decor--left {
+  z-index: 1;
+  bottom: -150px;
+  left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .l-index__services-decor.l-index__services-decor--left {
+    z-index: 0;
+    bottom: -100px;
+  }
+}
+
+.l-index__services-decor.l-index__services-decor--right {
+  top: -100px;
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .l-index__services-decor.l-index__services-decor--right {
+    top: -60px;
+  }
+}
+
 .l-index__packages {
   position: relative;
 }
@@ -1646,12 +1692,12 @@ ul {
 }
 
 .l-index__works {
-  margin: 170px 0 110px;
+  margin: 170px 0 70px;
 }
 
 @media screen and (max-width: 767px) {
   .l-index__works {
-    margin: 90px 0 70px;
+    margin: 90px 0 40px;
     padding: 0 30px;
   }
 }
@@ -1674,6 +1720,44 @@ ul {
   .l-index__works ul li img {
     width: 100%;
   }
+}
+
+.l-index__works ul .slick-dots {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 190px;
+  margin: 50px auto 0;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 767px) {
+  .l-index__works ul .slick-dots {
+    margin-top: 30px;
+  }
+}
+
+.l-index__works ul .slick-dots li {
+  width: 13px;
+  height: 13px;
+  margin-bottom: 0;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all .25s ease-in-out;
+}
+
+.l-index__works ul .slick-dots li.slick-active {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: #E52E44;
 }
 
 .l-index__works .slick-list {
@@ -1700,7 +1784,7 @@ ul {
 
 .l-index__reasons:after {
   width: 25%;
-  height: 150px;
+  height: 215px;
   position: absolute;
   z-index: 1;
   right: 0;
@@ -1740,7 +1824,7 @@ ul {
 }
 
 .l-index__reasons ul > li {
-  width: 23.5%;
+  width: 27.2%;
 }
 
 @media screen and (max-width: 767px) {
@@ -1798,6 +1882,7 @@ ul {
 
 .l-index__contact {
   width: 633px;
+  position: relative;
   margin: -120px auto 0;
 }
 
@@ -1813,7 +1898,9 @@ ul {
 }
 
 .l-index__contact-decor.l-index__contact-decor--left {
-  bottom: -42vw;
+  width: 46.6vw;
+  height: 39.4vw;
+  bottom: -30vw;
   left: -41vw;
 }
 
@@ -1825,14 +1912,15 @@ ul {
 }
 
 .l-index__contact-decor.l-index__contact-decor--left svg {
-  width: 46.6vw;
-  height: 39.4vw;
+  width: 100%;
+  height: 100%;
 }
 
 .l-index__contact-decor.l-index__contact-decor--right {
-  top: -10vw;
+  width: 38.9vw;
+  height: 46.6vw;
+  top: 0;
   right: -54vw;
-  transform: rotate(90deg);
 }
 
 @media screen and (max-width: 767px) {
@@ -1842,6 +1930,7 @@ ul {
 }
 
 .l-index__contact-decor.l-index__contact-decor--right svg {
-  width: 38.9vw;
-  height: 46.6vw;
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
 }

@@ -5,13 +5,14 @@ export default function initSliders() {
 		autoplay: true,
   		slidesToShow: 3,
 		cssEase: 'ease-out',
+		dots: true,
 		prevArrow: $('#js-works-slider .js-slider-prev'),
 		nextArrow: $('#js-works-slider .js-slider-next'),
 		responsive: [
 	      {
 	        breakpoint: 768,
 	        settings: {
-		        slidesToShow: 1,
+		        slidesToShow: 1
 	        }
 	      }
 	    ]  

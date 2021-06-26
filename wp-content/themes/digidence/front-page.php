@@ -18,27 +18,33 @@ get_header();
 ?>
 
 <main class="l-index">
-	<div class="hero u-flex u-flex--center">
+	<div class="hero u-flex u-flex--center" id="js-hero">
 		<div class="hero__left">
-			<div class="hero__eyecatch" id="js-hero-image-1" style="background-image: url(<?php echo IMAGE_URL; ?>hero-1.png);" data-splitting="cells" data-columns="10"></div>
-			<img src="<?php echo IMAGE_URL; ?>hero-2.png" alt="" id="js-hero-image-2">
+			<div class="hero__eyecatch" id="js-hero-image-1" style="background-image: url(<?php echo IMAGE_URL; ?>hero-1-final.png);" data-splitting="cells" data-columns="10"></div>
+			<img src="<?php echo IMAGE_URL; ?>hero-2-final.png" alt="" id="js-hero-image-2">
 			<img src="<?php echo IMAGE_URL; ?>hero-3.png" alt="" id="js-hero-image-3">
 		</div>
 		<div class="hero__right" id="js-hero-right">
-			<h2>All-in-one Digital Marketing Service</h2>
+			<h2>All-in-One Digital Marketing Services</h2>
 			<p>First impression indeed counts.</p>
-			<p>Your potential leads will enjoy a seamless experience navigating through your<br class="u-show-pc">customer-centric site leaving them with a lasting impression.<br class="u-show-pc">Yes, we work on making your first impression last.</p>
+			<p>Your potential leads will enjoy a seamless experience navigating through your customer-centric site leaving them with a lasting impression.
 			<a href="#js-contact" class="button js-scroll" data-text="CONTACT US">
 				<span>GET QUOTE</span>
 			</a>
 		</div>
-		<div class="hero__decor hero__decor--left">
+		<div class="hero__decor hero__decor--left rellax" data-rellax-speed="3" data-rellax-xs-speed="2">
 			<?php echo file_get_contents( get_stylesheet_directory_uri() . '/assets/images/d-overlay.svg' ); ?>
 		</div>
-		<div class="hero__decor hero__decor--right">
+		<div class="hero__decor hero__decor--right rellax" data-rellax-speed="-3" data-rellax-xs-speed="-2">
 			<?php echo file_get_contents( get_stylesheet_directory_uri() . '/assets/images/d-overlay.svg' ); ?>
 		</div>
 	</div>
+	<section class="l-index__about" id="js-about">
+		<div class="l-container js-scroll-activate">
+			<h2 class="section-title">ABOUT</h2>
+			<p><span>Digidence Inc.</span> is an end-to-end digital marketing agency that offers <span>strategic consultancy and development</span> for startups to growing businesses.  Whether you need a user-friendly <span>website design</span>, or you want to increase your <span>brand awareness</span> in search engines and social media, we’re here to work on making your first impression last.</p>
+		</div>
+	</section>
 	<section class="l-index__services" id="js-services">
 		<div class="l-container js-scroll-activate">
 			<h2 class="section-title">SERVICES</h2>
@@ -87,6 +93,8 @@ get_header();
 			</ul>
 		</div>
 		<div class="l-index__services-overlay"></div>
+		<div class="l-index__services-decor l-index__services-decor--left rellax"  data-rellax-speed="5" data-rellax-xs-speed="3"></div>
+		<div class="l-index__services-decor l-index__services-decor--right rellax"  data-rellax-speed="-5" data-rellax-xs-speed="-3"></div>
 	</section>
 	<section class="l-index__packages" id="js-packages">
 		<div class="l-container js-scroll-activate">
@@ -181,7 +189,7 @@ get_header();
 						<div class="reason__image"></div>
 						<div class="reason__details">
 							<h3>Passionate Creatives</h3>
-							<p>We love what we do. Helping professionals and businesses reach their goals through our knowledge, passion, and creativity encourages us to keep doing what we do best.</p>
+							<p>We love strategizing for the digital world. Helping professionals and businesses reach their goals through our knowledge, passion, and creativity encourages us to keep doing what we do best.</p>
 						</div>
 					</div>
 				</li>
@@ -189,7 +197,7 @@ get_header();
 					<div class="reason">
 						<div class="reason__image"></div>
 						<div class="reason__details">
-							<h3>Adaptable Professionals</h3>
+							<h3>Adaptable Digital Professionals</h3>
 							<p>We know your time is valuable and you have a lot of tasks on your hands. You can entrust the digital marketing tasks with us and we assure you, they’re in good hands.</p>
 						</div>
 					</div>
@@ -199,7 +207,7 @@ get_header();
 						<div class="reason__image"></div>
 						<div class="reason__details">
 							<h3>Advocates for Progress</h3>
-							<p>Digital Marketing is a rapidly changing world and we aspire to move along with it. We believe in progress and constant improvement so we can assure you that your digital marketing strategies keep up with the latest trends.</p>
+							<p>Digital Marketing is a fast-moving world, and we aspire to move along with it. We believe in progress and constant improvement, so we can assure you that your online marketing strategies keep up with the latest trends.</p>
 						</div>
 					</div>
 				</li>
@@ -232,10 +240,10 @@ get_header();
 				<img src="<?php echo IMAGE_URL; ?>letter-d.svg" class="contact__logo">
 			</a>
 		</div>
-		<div class="l-index__contact-decor l-index__contact-decor--left">
+		<div class="l-index__contact-decor l-index__contact-decor--left rellax"  data-rellax-speed="4" data-rellax-xs-speed="2">
 			<?php echo file_get_contents( get_stylesheet_directory_uri() . '/assets/images/d-overlay.svg' ); ?>
 		</div>
-		<div class="l-index__contact-decor l-index__contact-decor--right">
+		<div class="l-index__contact-decor l-index__contact-decor--right rellax"  data-rellax-speed="-4" data-rellax-xs-speed="-2">
 			<?php echo file_get_contents( get_stylesheet_directory_uri() . '/assets/images/d-overlay.svg' ); ?>
 	</aside>
 </main>
