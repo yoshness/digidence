@@ -3,7 +3,7 @@
   position: fixed;
   z-index: 15;
   top: 0;
-  left: 0;
+  // left: 0;
   padding: 40px 0 20px;
   -webkit-transition: padding $duration $easing,
   -webkit-filter $duration $easing;
@@ -17,20 +17,16 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+
+    @include max-screen($breakpoint-mobile) {
+      padding: 0 25px;
+    }
   }
   img {
-    &:nth-child(1) {
-      @include max-screen($breakpoint-mobile) {
-        width: 25px;
-      }
-    }
-    &:nth-child(2) {
-      margin-left: 25px;
+    width: 200px;
 
-      @include max-screen($breakpoint-mobile) {
-        width: 140px;
-        margin-left: 20px;
-      }
+    @include max-screen($breakpoint-mobile) {
+      width: 150px;
     }
   }
 

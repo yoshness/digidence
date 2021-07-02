@@ -1,6 +1,6 @@
 <footer class="footer">
 	<div class="l-container">
-		<img src="<?php echo IMAGE_URL; ?>logo.svg" alt="">
+		<img src="<?php echo IMAGE_URL; ?>logo-new.svg" alt="">
 		<small>© 2021 Digidence Inc. All rights reserved</small>
 		<ul class="footer__links u-flex">
 			<li>

@@ -1,8 +1,7 @@
 <header class="header" id="js-header">
 	<div class="l-container">
 		<a href="https://digidence.net">
-			<img src="<?php echo IMAGE_URL; ?>letter-d.svg" alt="">
-			<img src="<?php echo IMAGE_URL; ?>logo.svg" alt="">
+			<img src="<?php echo IMAGE_URL; ?>logo-new.svg" alt="">
 		</a>
 		<ul class="header__links u-flex">
 			<li>
